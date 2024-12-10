@@ -7,7 +7,7 @@ class ConnectionDB {
 
     public static function getInstance() {
         if (self::$conn === null) {
-            self::$conn = new mysqli('localhost', 'deportespichinch_vacacionales', 'c*OxlXsZt(h&', 'deportespichinch_vacacionales');
+            self::$conn = new mysqli('localhost', 'netcric1_cdp', 'netcric1_cdp', 'netcric1_cdp');
             if (self::$conn->connect_errno) {
                 die("Connection failed: " . self::$conn->connect_error);
             }
